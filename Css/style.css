@@ -1,0 +1,127 @@
+*:hover{
+    color: #03ddfa;
+}
+
+
+#capa{
+    width: 200px;
+    height: 200px;
+    transition: 4s;
+    -moz-transition: 4s;
+    -webkit-transition: 4s;
+    -o-transition: 3s;
+    animation: Box 2s;
+}
+
+
+#capa:hover{
+    transform: rotate (360deg);
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transition: rotate(360deg);
+    -o-transition: rotate(360deg);  
+
+}
+#capa{
+    animation: saltar 1s infinite;
+    display: inline-block;
+    transform: translatey(0);
+}
+@keyframes saltar{
+    0%{
+        transform: translatey(0);
+    }
+    10%{
+        transform: translatey(-10px);
+    }
+    50%{
+        transform: translatey(100px);
+    }
+    80%{
+        transform: translatey(110px);
+    }
+}  
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    box-sizing: border-box;
+    animation: BGcolorChanging-6colors 10s linear infinite alternate both;
+}
+
+
+h1{
+    color: whitesmoke;
+}
+div {
+    width: 700px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+.sometxt{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mydiv1{
+    animation: BGcolorChanging-4colors 6s linear infinite alternate both;
+}
+@keyframes BGcolorChanging-4colors{
+    0%{
+        background: #4515f5;
+    }
+    33.3333%{
+        background: #76f111;
+    }
+    66.666%{
+        background: #ce5d11;
+    }
+    100%{
+        background: #03ddfa;
+    }
+}
+
+.mydiv2{
+    animation: BGcolorChanging-5colors 8s linear infinite alternate both;
+}
+
+@keyframes BGcolorChanging-5colors{
+    0%{
+        background: #0804f7;
+    }
+    25%{
+        background: #f6fa03;
+    }
+    50%{
+        background: #353535
+    }
+    75%{
+        background: #145001;
+    }
+}
+
+@keyframes BGcolorChanging-6colors {
+    0%{
+        background: #ead519;
+    }
+    20%{
+        background: #cc85f5;
+    }
+    40%{
+background: #db0267;
+    }
+    60%{
+        background: #f5be10;
+    }
+    80%{
+        background: #ce5d11;
+    }
+    100%{
+        background: #a802a0;
+    }
+}

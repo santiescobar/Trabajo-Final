@@ -1,0 +1,9 @@
+@import url(style2.css);
+@keyframes Box {
+    25% {
+        transform: translate(1%);
+    }
+    50% {
+        transform: translate(-1%);
+    }
+}

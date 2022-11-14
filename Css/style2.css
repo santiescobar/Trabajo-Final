@@ -1,0 +1,7 @@
+.Box {
+    width: 100%;
+    height: 800px;
+    background-color: red;
+    text-align: center;
+    animation: Box 1s;
+}
